@@ -1,5 +1,3 @@
-#Project 4
-
 good_features <- filter(missing_values, missing_pct<0.25)
 vars <- good_features$feature[str_detect(good_features$feature,'num_')]
 cor_tmp <- transactions %>% left_join(properties, by="id_parcel") 
